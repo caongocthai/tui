@@ -12,35 +12,51 @@ header_height=$(printf "%s" "$header" | wc -l)
 header_width=48
 
 IFS= read -d '' -r papers <<"EOF"
-What Every Programmer Should Know About Memory,https://people.freebsd.org/~lstewart/articles/cpumemory.pdf,false
-Time Clocks and the Ordering of Events in a Distributed System,https://lamport.azurewebsites.net/pubs/time-clocks.pdf,false
-The Case for Shared Nothing,https://dsf.berkeley.edu/papers/hpts85-nothing.pdf,false
-The Google File System,https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf,false
-CAP Twelve Years Later: How the Rules Have Changed,https://sites.cs.ucsb.edu/~rich/class/cs293b-cloud/papers/brewer-cap.pdf,false
-ZooKeeper: Wait-free coordination for Internet-scale systems,https://www.usenix.org/legacy/event/atc10/tech/full_papers/Hunt.pdf,false
-Reflections on Trusting Trust,https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf,false
-Internet Routing Instability,https://www.cs.princeton.edu/courses/archive/fall20/cos461/papers/BGPstability98.pdf,false
-A Scalable Commodity Data Center Network Architecture,http://ccr.sigcomm.org/online/files/p63-alfares.pdf,false
-The Design and Implementation of a Log-Structured File System,https://people.eecs.berkeley.edu/~brewer/cs262/LFS.pdf,false
-The UNIX Time-Sharing System,https://courses.cs.washington.edu/courses/cse550/20au/papers/CSE550.UNIX-Timesharing.pdf,false
-Why Functional Programming Matters,https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf,false
-Why Threads Are A Bad Idea (for most purposes),https://sites.cc.gatech.edu/classes/AY2010/cs4210_fall/papers/ousterhout-threads.pdf,false
-Modern Microprocessors A 90-Minute Guide!,https://www.lighterra.com/papers/modernmicroprocessors,false
-False Sharing,https://docs.kernel.org/kernel-hacking/false-sharing.html,false
-Scalability! But at what COST?,https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf,false
-Dynamo: Amazon’s Highly Available Key-value Store,https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf,true
-Large-scale cluster management at Google with Borg,https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43438.pdf,false
-Out of the Tar Pit,https://curtclifton.net/papers/MoseleyMarks06a.pdf,false
-The BSD Packet Filter: A New Architecture for User-level Packet Capture,https://www.tcpdump.org/papers/bpf-usenix93.pdf,false
-Scaling Memcache at Facebook,https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final170_update.pdf,false
-The Tail at Scale,https://www.barroso.org/publications/TheTailAtScale.pdf,false
-TAO: Facebook’s Distributed Data Store for the Social Graph,https://www.usenix.org/system/files/conference/atc13/atc13-bronson.pdf,false
-Spanner: Google’s Globally-Distributed Database,https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf,false
-Caching for a Global Netflix,https://netflixtechblog.com/caching-for-a-global-netflix-7bcc457012f1,false
-A large scale analysis of hundreds of in-memory cache clusters at Twitter,https://www.usenix.org/system/files/osdi20-yang.pdf,false
+What Every Programmer Should Know About Memory,https://people.freebsd.org/~lstewart/articles/cpumemory.pdf,0
+Time Clocks and the Ordering of Events in a Distributed System,https://lamport.azurewebsites.net/pubs/time-clocks.pdf,0
+The Case for Shared Nothing,https://dsf.berkeley.edu/papers/hpts85-nothing.pdf,0
+The Google File System,https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf,0
+CAP Twelve Years Later: How the Rules Have Changed,https://sites.cs.ucsb.edu/~rich/class/cs293b-cloud/papers/brewer-cap.pdf,0
+ZooKeeper: Wait-free coordination for Internet-scale systems,https://www.usenix.org/legacy/event/atc10/tech/full_papers/Hunt.pdf,0
+Reflections on Trusting Trust,https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf,0
+Internet Routing Instability,https://www.cs.princeton.edu/courses/archive/fall20/cos461/papers/BGPstability98.pdf,0
+A Scalable Commodity Data Center Network Architecture,http://ccr.sigcomm.org/online/files/p63-alfares.pdf,0
+The Design and Implementation of a Log-Structured File System,https://people.eecs.berkeley.edu/~brewer/cs262/LFS.pdf,0
+The UNIX Time-Sharing System,https://courses.cs.washington.edu/courses/cse550/20au/papers/CSE550.UNIX-Timesharing.pdf,0
+Why Functional Programming Matters,https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf,0
+Why Threads Are A Bad Idea (for most purposes),https://sites.cc.gatech.edu/classes/AY2010/cs4210_fall/papers/ousterhout-threads.pdf,0
+Modern Microprocessors A 90-Minute Guide!,https://www.lighterra.com/papers/modernmicroprocessors,0
+False Sharing,https://docs.kernel.org/kernel-hacking/false-sharing.html,0
+Scalability! But at what COST?,https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf,0
+Dynamo: Amazon’s Highly Available Key-value Store,https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf,0
+Large-scale cluster management at Google with Borg,https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43438.pdf,0
+Out of the Tar Pit,https://curtclifton.net/papers/MoseleyMarks06a.pdf,0
+The BSD Packet Filter: A New Architecture for User-level Packet Capture,https://www.tcpdump.org/papers/bpf-usenix93.pdf,0
+Scaling Memcache at Facebook,https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final170_update.pdf,0
+The Tail at Scale,https://www.barroso.org/publications/TheTailAtScale.pdf,0
+TAO: Facebook’s Distributed Data Store for the Social Graph,https://www.usenix.org/system/files/conference/atc13/atc13-bronson.pdf,0
+Spanner: Google’s Globally-Distributed Database,https://www.usenix.org/system/files/conference/osdi12/osdi12-final-16.pdf,0
+Caching for a Global Netflix,https://netflixtechblog.com/caching-for-a-global-netflix-7bcc457012f1,0
+A large scale analysis of hundreds of in-memory cache clusters at Twitter,https://www.usenix.org/system/files/osdi20-yang.pdf,0
 EOF
 
 paper_count=$(printf "%s" "$papers" | wc -l)
+
+load_papers() {
+  papers_file="$HOME/.papers/papers.csv"
+  if [[ ! -f "$papers_file" ]]; then
+    mkdir -p "$HOME/.papers"
+    touch "$papers_file"
+    printf "%s" "$papers" > $papers_file
+  else
+    IFS= read -d '' -r papers < $papers_file
+  fi
+  while [[ $papers == *$'\n' ]]; do
+    papers="${papers%$'\n'}"
+  done
+  paper_count=$(printf "%s" "$papers" | wc -l)
+  ((paper_count++))
+}
 
 get_tsize() {
   # 1. Save Cursor: \x1b7 (Save current position so we don't lose our place).
@@ -153,6 +169,10 @@ draw_static() {
   done
 
   draw_header
+
+
+  printf "\x1b[$((lines-2));3HPress j/k to move around and c to toggle completion.\n"
+  printf "\x1b[$((lines-1));3HPress Ctrl+C to exit.\n"
 }
 
 draw_menu() {
@@ -168,6 +188,8 @@ draw_menu() {
     while IFS="," read -r name link completed; do
       if [[ $i -eq $selected ]]; then
         printf "\x1b[$((first_line + i));3H\x1b[33m    %02d ${name}\x1b[0m\n" $i
+      elif [[ "$completed" == "1" ]]; then
+        printf "\x1b[$((first_line + i));3H\x1b[92m    %02d ${name}\x1b[0m\n" $i
       else
         printf "\x1b[$((first_line + i));3H\x1b[0m    %02d ${name}\n" $i
       fi
@@ -175,7 +197,6 @@ draw_menu() {
     ((i++))
   done <<< "$papers"
 
-  printf "\x1b[$((lines-1));3HPress Ctrl+C to exit.\n"
 
   printf "\x1b[$((first_line + selected));4H->"
   printf "\x1b[999H"
@@ -216,6 +237,28 @@ open_paper() {
   fi
 }
 
+toggle_complete() {
+  i=0
+  new_papers=""
+  while IFS= read -r line; do
+    ((i++))
+    if [[ $i -ne $1 ]]; then
+      new_papers+="$line"$'\n'
+      continue
+    fi
+    while IFS=',' read -r name url completed; do
+      #new_papers=$(printf "%s%s,%s,%s\n" "$new_papers" "$name" "$url" "((1 - completed))")
+      new_papers+="$name,$url,$((1 - completed))"$'\n'
+    done <<< "$line"
+  done <<< "$papers"
+  new_papers="${new_papers%%+($'\n')}"
+  papers=$new_papers
+  while [[ $papers == *$'\n' ]]; do
+    papers="${papers%$'\n'}"
+  done
+  printf "%s" "$papers" > $papers_file
+}
+
 selected=1
 
 window_resize() {
@@ -225,6 +268,8 @@ window_resize() {
 }
 
 main() {
+  load_papers
+
   play_bg_music
   draw_static
 
@@ -238,6 +283,9 @@ main() {
       draw_menu $selected
     elif [[ "$input" == "j" && $selected -lt $paper_count ]]; then
       ((selected++))
+      draw_menu $selected
+    elif [[ "$input" == "c" ]]; then
+      toggle_complete $selected
       draw_menu $selected
     elif [[ "$input" == "" ]]; then
       open_paper $selected
