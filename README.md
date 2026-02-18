@@ -13,3 +13,15 @@ curl -fsSL "https://raw.githubusercontent.com/caongocthai/tui/refs/heads/main/pa
 ```
 Use j/k to move down/up. Press enter to open the paper on a web browser to read.
 
+## Bouncing DVD Logo Screensaver
+
+TUI that recreates the iconic screensaver from old DVD players where the "DVD Video" logo bounces around the screen, changing color every time it hits an edge.
+
+> Not a single line of code was written by LLM during the development of this TUI application (except the DVD ASCII logo)
+
+### Quick Start
+
+```sh
+curl -fsSL "https://raw.githubusercontent.com/caongocthai/tui/refs/heads/main/dvd/dvd.sh" | bash
+```
+
