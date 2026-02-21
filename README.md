@@ -25,3 +25,15 @@ TUI that recreates the iconic screensaver from old DVD players where the "DVD Vi
 curl -fsSL "https://raw.githubusercontent.com/caongocthai/tui/refs/heads/main/dvd/dvd.sh" | bash
 ```
 
+## TUI Image Rendering
+
+TUI that renders any image, downscaling the image if necessary to fit the terminal size.
+
+> Not a single line of code was written by LLM during the development of this TUI application.
+
+### Quick Start
+
+```sh
+./image/image.py /path/to/image/file
+```
+
